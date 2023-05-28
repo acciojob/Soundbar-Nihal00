@@ -12,7 +12,7 @@ for(let i = 0; i < buttons.length; i++){
 	buttons[i].addEventListener("click", function(event) {
 	  var button = event.target;
 	  if (button.className === "btn") {
-	    audio+[i].play();
+	    (audio+[i]).play();
 	  } else if (button.className === "stop") {
 	    audio.pause();
 	  }
